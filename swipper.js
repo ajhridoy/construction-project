@@ -29,3 +29,21 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+  var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

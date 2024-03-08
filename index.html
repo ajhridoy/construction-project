@@ -32,6 +32,7 @@
                     </div>
                 </div>
             </section>
+            <!-- second navbar -->
             <section id="nav-2">
                 <div id="nav2-body">
                     <div>
@@ -39,8 +40,16 @@
                     </div>
                     <div>
                         <ul id="list-style">
-                            <li>
+                            <li id="home-menu">
                                 <a href="">HOME+</a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="">HOMEPAGE 1</a></li>
+                                  <li><a href="">HOMEPAGE 2</a></li>
+                                  <li><a href="">HOMEPAGE 3</a></li>
+                                  <li><a href="">HOMEPAGE 4</a></li>
+                                  <li><a href="">HOMEPAGE 5</a></li>
+                                  <li><a href="">HOMEPAGE 6</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="">SERVICES</a>
@@ -48,8 +57,18 @@
                             <li>
                                 <a href="">PORTFOLIO</a>
                             </li>
-                            <li>
-                                <a href="">PAGES</a>
+                            <li id="pages-menu">
+                                <a href="">PAGES+</a>
+                                <ul class="dropdown-menu2">
+                                  <li><a href="">ABOUT 2</a></li>
+                                  <li><a href="">TEAM</a></li>
+                                  <li><a href="">FAQ</a></li>
+                                  <li><a href="">PROJECTS</a></li>
+                                  <li><a href="">PROJECTS 2</a></li>
+                                  <li><a href="">PRICING</a></li>
+                                  <li><a href="">PRICING 2</a></li>
+                                  <li><a href="">SERVICES 2</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="">NEWS</a>
@@ -64,8 +83,8 @@
                             <div><img class="ic-image" src="images/loupe.png" alt=""></div>
                         </div>
                         <div id="number">
-                            <p>CALL FOR SUPPORT</p>
-                            <h3>+5 282 350 360</h3>
+                            <p id="num-head">CALL FOR SUPPORT</p>
+                            <h3 id="num">+5 282 350 360</h3>
                         </div>
                     </div>
                 </div>
@@ -223,35 +242,34 @@
         <img src="images/b5.png" alt="">
       </div>
     </div>
-    <!-- <div class="swiper-pagination2"></div> -->
   </div>
-            </div>
+  </div>
 
-    </section>
-    <!-- tab section -->
-    <section id="tab-section">
+  </section>
+  <!-- tab section -->
+  <section id="tab-section">
         <div id="company-tab">
             <div class="container">
                 <div class="tab-buttons">
-                  <button class="tab-btn active" content-id="home">
+                  <button class="tab-btn active" content-id="planning">
                     <img class="tab-btn-img" src="images/tab/notebook (1).png" alt="" srcset="">
                     <span>Core Planning</span>
                   </button>
-                  <button class="tab-btn" content-id="services">
+                  <button class="tab-btn" content-id="materials">
                     <img class="tab-btn-img" src="images/tab/shipping.png" alt="" srcset="">
                     <span>Raw Materials</span>
                   </button>
-                  <button class="tab-btn" content-id="contact">
+                  <button class="tab-btn" content-id="execution">
                     <img class="tab-btn-img" src="images/tab/data-processing.png" alt="" srcset="">
                     <span>Execution</span>
                   </button>
-                  <button class="tab-btn" content-id="about">
+                  <button class="tab-btn" content-id="result">
                     <img class="tab-btn-img" src="images/tab/bar-chart.png" alt="" srcset="">
                     <span>Final Result</span>
                   </button>
                 </div>
                 <div class="tab-contents">
-                  <div class="content show" id="home">
+                  <div class="content show" id="planning">
                     <div class="content-info">
                       <div>
                         <h1 class="tab-content-head">WE PLAN STRATEGIC BEFORE STARTING A PROJECT</h1>
@@ -278,48 +296,291 @@
                       </div>
                     </div>
                   </div>
-                  <div class="content" id="services">
+                  <div class="content" id="materials">
                     <div class="content-info">
-                      <h1 class="content-title">
-                        Services
-                      </h1>
-                      <p class="content-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu nulla in tellus sagittis malesuada sit amet ac urna. Fusce eget eleifend nulla, a congue sem.
-                      </p>
+                      <div>
+                        <h1 class="tab-content-head">THIS IS SOME PLACEHOLDER CONTENT THE TABS</h1>
+                        <p class="tab-content-desc">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                        <div class="years-prog">
+                            <div>
+                                <h3 class="pof">POF</h3>
+                                <p class="elemental">Elemental</p>
+                                <h2 class="time">24.658 <span class="yearOfTab">MON</span></h2>
+                            </div>
+                            <div>
+                                <h3 class="pof">HUI</h3>
+                                <p class="elemental">Special</p>
+                                <h2 class="time">224.658  <span class="yearOfTab">YEAR</span></h2>
+                            </div>
+                        </div>
+                        <div class="tab-read">
+                            <a class="read-more" href="">READ MORE</a>
+                            <img class="arrow" src="images/right-arrow.png" alt="">
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/project-tab2.jpg" alt="">
+                      </div>
                     </div>
                   </div>
-                  <div class="content" id="contact">
+                  <div class="content" id="execution">
                     <div class="content-info">
-                      <h1 class="content-title">
-                        Contact
-                      </h1>
-                      <p class="content-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu nulla in tellus sagittis malesuada sit amet ac urna. Fusce eget eleifend nulla, a congue sem.
-                      </p>
+                      <div>
+                        <h1 class="tab-content-head">WE PLAN STRATEGIC BEFORE STARTING A PROJECT</h1>
+                        <p class="tab-content-desc">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                        <div class="years-prog">
+                            <div>
+                                <h3 class="pof">POF</h3>
+                                <p class="elemental">Elemental</p>
+                                <h2 class="time">24.658 <span class="yearOfTab">MON</span></h2>
+                            </div>
+                            <div>
+                                <h3 class="pof">HUI</h3>
+                                <p class="elemental">Special</p>
+                                <h2 class="time">224.658  <span class="yearOfTab">YEAR</span></h2>
+                            </div>
+                        </div>
+                        <div class="tab-read">
+                            <a class="read-more" href="">READ MORE</a>
+                            <img class="arrow" src="images/right-arrow.png" alt="">
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/project-tab.jpg" alt="">
+                      </div>
                     </div>
                   </div>
-                  <div class="content" id="about">
+                  <div class="content" id="result">
                     <div class="content-info">
-                      <h1 class="content-title">
-                        About
-                      </h1>
-                      <p class="content-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu nulla in tellus sagittis malesuada sit amet ac urna. Fusce eget eleifend nulla, a congue sem.
-                      </p>
+                      <div>
+                        <h1 class="tab-content-head">THIS IS SOME PLACEHOLDER CONTENT THE TABS</h1>
+                        <p class="tab-content-desc">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</p>
+                        <div class="years-prog">
+                            <div>
+                                <h3 class="pof">POF</h3>
+                                <p class="elemental">Elemental</p>
+                                <h2 class="time">24.658 <span class="yearOfTab">MON</span></h2>
+                            </div>
+                            <div>
+                                <h3 class="pof">HUI</h3>
+                                <p class="elemental">Special</p>
+                                <h2 class="time">224.658  <span class="yearOfTab">YEAR</span></h2>
+                            </div>
+                        </div>
+                        <div class="tab-read">
+                            <a class="read-more" href="">READ MORE</a>
+                            <img class="arrow" src="images/right-arrow.png" alt="">
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/project-tab2.jpg" alt="">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </di>
-            
+              </div>
         </div>
     </section>
-</main>
-
-
-
-
+    <!-- project complication number -->
+    <section id="project-completed-sec">
+      <div id="numberOfProject">
+        <div>
+          <h1 class="pro-number"><span class="counter" data-speed="1000">30</span>K+</h1>
+          <p class="pro-name">PROJECT DONE</p>
+        </div>
+        <div>
+          <h1 class="pro-number"><span class="counter" data-speed="1000">9<span class="counter" data-speed="1000">80</span></span>+</h1>
+          <p class="pro-name">HAPPY CLIENTS</p>
+        </div>
+        <div>
+          <h1 class="pro-number"><span class="counter" data-speed="1000">50</span>+</h1>
+          <p class="pro-name">SKILLED EMPLOYEE</p>
+        </div>
+        <div>
+          <h1 class="pro-number"><span class="counter" data-speed="1000">98</span>%</h1>
+          <p class="pro-name">COUNTRY COVERAGE</p>
+        </div>
+      </div>
+    </section>
+    <!-- choose us section -->
+    <section id="choose-us-sec">
+      <div id="choose-us">
+        <div id="chooseUsImg">
+          <img id="us-img" src="images/why-bg.jpg" alt="" srcset="">
+        </div>
+        <div id="choose-us-body">
+          <p class="head">WHY CHOOSE US</p>
+          <h1 class="head2">People Choice Us For Success</h1>
+          <div class="img-body" id="body-desc">
+            <div class="body-img-contain"><img class="us-body-img" src="images/cpu.png" alt=""></div>
+            <div>
+              <h2 class="img-body-head">ADVANCED TECHNOLOGY</h2>
+              <p class="img-body-desc">We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
+            </div>
+          </div>
+          <div class="img-body">
+            <div class="body-img-contain"><img class="us-body-img" src="images/verified.png" alt=""></div>
+            <div>
+              <h2 class="img-body-head">TRUSTWORTHY</h2>
+              <p class="img-body-desc">We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- meet the team section -->
+    <section id="meet-team-sec">
+        <div id="meet-the-team">
+          <div id="team-desc">
+            <p class="head">SKILLED TEAM</p>
+            <h1 class="head2">Meet The Team</h1>
+            <p class="img-body-desc">We are expert and professional.But I must explain to you how all this mistaken ofenoun cing pleasure and praising.</p>
+            <button id="our-team-btn">JOIN OUR TEAM</button>
+          </div>
+          <div class="team-member">
+            <img class="team-member-img" src="images/member/1.png" alt="">
+            <div class="contractor-details">
+              <div>
+                <p class="member-position">Contractor</p>
+                <h2 class="member-name">Abraham Reza</h2>
+              </div>
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-member-img" src="images/member/2.png" alt="">
+            <div class="contractor-details">
+              <div>
+                <p class="member-position">Engineer</p>
+                <h2 class="member-name">Salman Ahmed</h2>
+              </div>
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-member-img" src="images/member/3.png" alt="">
+            <div class="contractor-details">
+              <div>
+                <p class="member-position">Mechanic</p>
+                <h2 class="member-name">Daniel David</h2>
+              </div>
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-member-img" src="images/member/4.jpg" alt="">
+            <div class="contractor-details">
+              <div>
+                <p class="member-position">Contractor</p>
+                <h2 class="member-name">Brandon Tailor</h2>
+              </div>
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-member-img" src="images/member/5.jpg" alt="">
+            <div class="contractor-details">
+              <div>
+                <p class="member-position">Manager</p>
+                <h2 class="member-name">Utappha Karun</h2>
+              </div>
+              <button class="plus-btn">+</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- project-section -->
+    <section id="project-sowCase-sec">
+      <div id="project-container">
+        <div id="project-header">
+          <h1 id="project-main-head">PROJECT</h1>
+          <div id="second-head">
+            <p class="head">RECENT PORTFOLIO</p>
+            <h1 class="head2">Let's See Recent Projects</h1>
+          </div>
+       </div>
+      </div>
+    </section>
+    <section id="swipper-container">
+      <!-- <div>  -->
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide project-div">
+                <img class="project-img" src="images/p1.jpg" alt="">
+                <div class="project-details">
+                  <h1 class="pro-detail-num">01</h1>
+                  <div>
+                    <p class="project-type">Construction</p>
+                    <h2 class="project-location">Twelve, Portland</h2>
+                    <p class="client-name">Client: Gerding Development</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project-div">
+                <img class="project-img" src="images/p2.jpg" alt="">
+                <div class="project-details">
+                  <h1 class="pro-detail-num">02</h1>
+                  <div>
+                    <p class="project-type">Construction</p>
+                    <h2 class="project-location">Shreveport, <br> Bossier</h2>
+                    <p class="client-name">Client: Southeast Land</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project-div">
+                <img class="project-img" src="images/p3.jpg" alt="">
+                <div class="project-details">
+                  <h1 class="pro-detail-num">03</h1>
+                  <div>
+                    <p class="project-type">Managenment</p>
+                    <h2 class="project-location">Development, <br> House</h2>
+                    <p class="client-name">Client: Green Dopler</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project-div">
+                <img class="project-img" src="images/p1.jpg" alt="">
+                <div class="project-details">
+                  <h1 class="pro-detail-num">01</h1>
+                  <div>
+                    <p class="project-type">Construction</p>
+                    <h2 class="project-location">Twelve, Portland</h2>
+                    <p class="client-name">Client: Gerding Development</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project-div">
+                <img class="project-img" src="images/p2.jpg" alt="">
+                <div class="project-details">
+                  <h1 class="pro-detail-num">02</h1>
+                  <div>
+                    <p class="project-type">Construction</p>
+                    <h2 class="project-location">Shreveport, <br> Bossier</h2>
+                    <p class="client-name">Client: Southeast Land</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project-div">
+                <img class="project-img" src="images/p3.jpg" alt="">
+                <div class="project-details">
+                  <h1 class="pro-detail-num">03</h1>
+                  <div>
+                    <p class="project-type">Managenment</p>
+                    <h2 class="project-location">Development, <br> House</h2>
+                    <p class="client-name">Client: Green Dopler</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      <!-- </div> -->
+    </section>
+ </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swipper.js"></script>
     <script src="tab.js"></script>
+    <script src="counter.js"></script>
 </body>
 </html>
