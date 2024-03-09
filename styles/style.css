@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    width: 100%;
+}
 body{
     font-family: "Roboto", sans-serif;
 }
@@ -252,7 +255,7 @@ ul > li > a{
     font-size: 57px;
     font-weight: 700;
     color: var(--secondary-color);
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 }
 #abou-head3{
     font-size: 20px;
@@ -302,7 +305,7 @@ ul > li > a{
     box-shadow: 5px 5px 5px white;
 }
 .do-card-img{
-    width: 385px;
+    /* width: 385px; */
 }
 .card-body{
     margin-top: -4px;
@@ -645,6 +648,7 @@ ul > li > a{
 }
 .team-member{
     width: 380px;
+    overflow: hidden;
 }
 .team-member-img{
     width: 100%;
@@ -664,6 +668,29 @@ ul > li > a{
     top: -50px;
     background-color: #fff;
     padding: 15px;
+}
+.member-info {
+    height: 57px;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+.member-info:hover .member-title {
+    margin-top: -50px;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+.member-info:hover .member-social {
+    visibility: visible;
+    transition: all .4s ease-in-out;
+}
+.member-info:hover{
+    border-bottom: 1px solid red;
+    left: 0;
+    right: auto;
+}
+.member-social {
+    visibility: hidden;
+    transition: all .4s ease-in-out;
 }
 .plus-btn{
     width: 45px;
@@ -806,7 +833,25 @@ ul > li > a{
     width: 385px;
 }
 .card-img{
+    position: relative;
+}
+.card-img::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /* background-color: rgb(47, 51, 79);
+     */
+     background-color: #001659;
+    transition: all .4s ease-in-out;
+}
+.card-img:hover::before{
     width: 100%;
+    left: 0;
+    right: auto;
+    opacity: 0.3;
 }
 .blog-card-body{
     position: relative;
@@ -910,6 +955,11 @@ ul > li > a{
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 30px;
+    transition: transform .2s linear;
+
+}
+#links a:hover{
+    transform: translateX(10px);
 }
 #footer-foot{
     background-color: var(--primary-color);
@@ -982,4 +1032,409 @@ ul > li > a{
 }
 .condition-link:hover{
     color: var(--primary-color);
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    nav{
+        position: static;
+    }
+    #nav1{
+        display: none;
+    }
+    #nav-menubar{
+        display: none;
+    }
+    #serch-sec{
+        display: none;
+    }
+
+    /* header */
+    #dream-div{
+        background-position: center;
+        height: 60vh;
+    }
+    #dream-div2{
+        background-position: center;
+        height: 60vh;
+    }
+    .caption{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 10px;
+    }  
+    .dream-head{
+        font-size: 48px;
+    }
+    .head-desc{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .dream-btn-1{
+        padding: 15px 25px;
+        margin-top: 20px;
+    }
+    .dream-btn-2{
+        padding: 15px 25px;
+        margin-top: 20px;
+    }
+
+    /* about */
+    #about-sec{
+        padding: 100px 0;
+    }
+    #about-company{
+        width: 95%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    #ab-img{
+        width: 100%;
+        height: 90%;
+    }
+    .head2{
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+   
+    /* what we do */
+    #wht-do-main-head{
+        display: none;
+    }
+    #what-we-do-cardContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #wht-do-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* looking for */
+    #looking-for{
+        padding: 40px 30px;
+        display: block;
+        text-align: center;
+    }
+    #looking-head{
+        display: block;
+        width: 90%;
+    }
+    #look-img{
+        width: 80px;
+    }
+    #look-head{
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    #look-btn{
+        padding: 15px 25px;
+ 
+    }
+
+    /* tab-sec */
+    #company-tab{
+        width: 95%;
+      }
+    .tab-buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .tab-btn-img{
+        width: 15px;
+        /* display: block;
+        margin: 0 auto; */
+        margin-right: 5px;
+      }
+      .tab-btn{
+        padding: 20px 10px;
+        text-align: center;
+      }
+      .content-info{
+        display: block;
+        padding: 60px 15px;
+      }
+      .tab-content-head{
+        font-size: 26px;
+      }
+    .tab-read{
+        margin-bottom: 10px;
+    }
+    #numberOfProject{
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+    .pro-number{
+        margin-bottom: 10px;
+    }
+    .pro-name{
+        margin-bottom: 20px;
+    }
+
+    /* choose us */
+    #chooseUsImg{
+        display: none;
+    }
+    #choose-us-body{
+        padding: 70px 15px;
+    }
+    .img-body{
+        display: block;
+        /* justify-content: center;
+        align-items: center;
+        gap: 30px; */
+        /* width: 90%; */
+    }
+    .img-body-head{
+        margin-top: 20px;
+    }
+    #meet-the-team{
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #project-main-head{
+        display: none;
+    }
+    #second-head{
+        margin-left: 0px;
+    }
+    #project-sowCase-sec{
+        padding: 50px 10px;
+    }
+    #blog-main-head{
+        display: none;
+    }
+    #blogs-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #blog-body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #footer-body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #footer-foot{
+        /* background-color: var(--primary-color);
+        width: 90%;
+        margin: 0 auto;
+        padding:  45px 40px;
+        display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+     */
+    }
+    #copyright{
+        display: block;
+        text-align: center;
+    }
+    #condition{
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+/* responsive for tab */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav{
+        position: static;
+    }
+    #nav1{
+        display: none;
+    }
+    #nav-menubar{
+        display: none;
+    }
+    #serch-sec{
+        display: none;
+    }
+
+    /* header */
+    #dream-div{
+        background-position: center;
+        height: 60vh;
+    }
+    #dream-div2{
+        background-position: center;
+        height: 60vh;
+    }
+    .caption{
+        width: 90%;
+        margin: 0 auto;
+        /* text-align: center; */
+        margin-left: 10px;
+    }  
+    .dream-head{
+        font-size: 60px;
+    }
+    .head-desc{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .dream-btn-1{
+        padding: 15px 25px;
+        margin-top: 20px;
+    }
+    .dream-btn-2{
+        padding: 15px 25px;
+        margin-top: 20px;
+    }
+
+    /* about */
+    #about-sec{
+        padding: 100px 0;
+    }
+    #about-company{
+        width: 95%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    #ab-img{
+        width: 100%;
+        height: 90%;
+    }
+    .head2{
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+   
+    /* what we do */
+    #wht-do-main-head{
+        display: none;
+    }
+    #what-we-do-cardContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #wht-do-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* looking for */
+    #looking-for{
+        padding: 40px 30px;
+        display: flex;
+    }
+    #looking-head{
+        display: flex;
+        width: 90%;
+    }
+    #look-img{
+        width: 80px;
+    }
+    #look-head{
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    #look-btn{
+        padding: 15px 25px;
+ 
+    }
+
+    /* tab-sec */
+    #company-tab{
+        width: 95%;
+      }
+    .tab-buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .tab-btn-img{
+        width: 15px;
+        /* display: block;
+        margin: 0 auto; */
+        margin-right: 5px;
+      }
+      .tab-btn{
+        padding: 20px 10px;
+        text-align: center;
+      }
+      .content-info{
+        display: block;
+        padding: 60px 15px;
+      }
+      .tab-content-head{
+        font-size: 26px;
+      }
+    .tab-read{
+        margin-bottom: 10px;
+    }
+    #numberOfProject{
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    .pro-number{
+        margin-bottom: 10px;
+    }
+    .pro-name{
+        margin-bottom: 20px;
+    }
+
+    /* choose us */
+    #chooseUsImg{
+        display: none;
+    }
+    #choose-us-body{
+        padding: 70px 15px;
+    }
+    .img-body{
+        display: block;
+        /* justify-content: center;
+        align-items: center;
+        gap: 30px; */
+        /* width: 90%; */
+    }
+    .img-body-head{
+        margin-top: 20px;
+    }
+    #meet-the-team{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #project-main-head{
+        display: none;
+    }
+    #second-head{
+        margin-left: 0px;
+    }
+    #project-sowCase-sec{
+        padding: 50px 10px;
+    }
+    #blog-main-head{
+        display: none;
+    }
+    #blogs-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #blog-body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footer-body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footer-foot{
+        /* background-color: var(--primary-color);
+        width: 90%;
+        margin: 0 auto;
+        padding:  45px 40px;
+        display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+     */
+    }
+    #copyright{
+        display: block;
+        text-align: center;
+    }
+    #condition{
+        justify-content: center;
+        margin-top: 15px;
+    }
 }
