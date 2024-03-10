@@ -23,7 +23,7 @@ nav{
 #nav1{
     background-color: var(--secondary-color); 
     color: white;
-    padding: 15px;
+    padding: 12px;
 }
 #nav1-body{
     width: 95%;
@@ -75,7 +75,7 @@ ul > li > a{
 }
 #list-style{
     display: flex;
-    gap: 35px;
+    gap: 40px;
 }
 #list-style #home-menu .dropdown-menu{
     display: none;
@@ -169,10 +169,6 @@ ul > li > a{
     border-radius: 3px;
     text-transform: uppercase;
   }
-  a.active,a:hover{
-    background: rgb(11, 23, 40);
-    transition: .5s;
-  }
   .checkbtn{
     font-size: 30px;
     color: white;
@@ -184,7 +180,7 @@ ul > li > a{
   }
   #check{
     display: none;
-  }git
+  }
 
 #dream-div{
     background-image: url('../images/hero1.jpg');
