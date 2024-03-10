@@ -33,6 +33,9 @@ nav{
     width: 20px;
     margin-right: 10px;
 }
+.ic-image:hover{
+    cursor: pointer;
+}
 #nav1-body{
     display: flex;
     justify-content: space-between;
@@ -128,6 +131,61 @@ ul > li > a{
     font-size: 24px;
     font-weight: 700;
 }
+
+/* toggle menu */
+#phone-display{
+    display: none;
+}
+#phn-nav-img{
+    width: 120px;
+}
+#phone-display{
+    background: rgb(11, 23, 40);
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 20px 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  #phone-display ul{
+    float: right;
+    margin-right: 20px;
+  }
+  #phone-display ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  #phone-display ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: rgb(11, 23, 40);
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }git
+
 #dream-div{
     background-image: url('../images/hero1.jpg');
     /* background-repeat: no-repeat; */
@@ -191,9 +249,12 @@ ul > li > a{
 /* about me section styles */
 #about-sec{
     padding: 120px 0;
+    width: 100%;
+    overflow: hidden;
 }
 #about-company{
     width: 90%;
+    max-width: 1230px;
     margin: 0 auto;
     display: flex;
     gap: 60px;
@@ -276,9 +337,12 @@ ul > li > a{
 #what-do-sec{
  background-color: rgb(249, 249, 249);
  padding: 100px 0;
+ width: 100%;
+ overflow: hidden;
 }
 #wht-do-container{
     width: 90%;
+    max-width: 1230px;
     margin: 0 auto;
 }
 #wht-do-header{
@@ -428,6 +492,7 @@ ul > li > a{
   }
   #company-tab{
     width: 90%;
+    max-width: 1230px;
     margin: 0 auto;
     z-index: 1;
   }
@@ -544,6 +609,8 @@ ul > li > a{
 /* project completed styles */
 #project-completed-sec{
     padding: 100px 0;
+    overflow: hidden;
+    width: 100%;
 }
 #numberOfProject{
     display: grid;
@@ -551,6 +618,7 @@ ul > li > a{
     justify-content: space-around;
     text-align: center;
     width: 90%;
+    max-width: 1230px;
     margin: 0 auto;
 }
 .pro-number{
@@ -565,7 +633,9 @@ ul > li > a{
 }
 /* choose us styles*/
 #choose-us-sec{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    overflow: hidden;
 }
 #choose-us{
     background-image: radial-gradient(#E6E6E6 1px, transparent 0);
@@ -621,9 +691,12 @@ ul > li > a{
 /* meet the team style */
 #meet-team-sec{
     margin-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
 }
 #meet-the-team{
     width: 90%;
+    max-width: 1230px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -668,6 +741,7 @@ ul > li > a{
     top: -50px;
     background-color: #fff;
     padding: 15px;
+    transition: all .3s ease-in-out;
 }
 .member-info {
     height: 57px;
@@ -675,7 +749,7 @@ ul > li > a{
     transition: all .4s ease-in-out;
 }
 .member-info:hover .member-title {
-    margin-top: -50px;
+    margin-top: -45px;
     visibility: hidden;
     transition: all .4s ease-in-out;
 }
@@ -683,14 +757,17 @@ ul > li > a{
     visibility: visible;
     transition: all .4s ease-in-out;
 }
-.member-info:hover{
-    border-bottom: 1px solid red;
-    left: 0;
-    right: auto;
+.contractor-details:hover{
+    border-bottom: 1px solid var(--primary-color);
 }
 .member-social {
     visibility: hidden;
     transition: all .4s ease-in-out;
+}
+.member-social-img{
+    width: 30px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 .plus-btn{
     width: 45px;
@@ -804,9 +881,12 @@ ul > li > a{
 /* blog section styles */
 #blog-section{
     margin-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
 }
 #blogs-container{
     width: 90%;
+    max-width: 1230px;
     margin: 0 auto;
 }
 #blog-header{
@@ -990,7 +1070,10 @@ ul > li > a{
 }
 #social-links{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+}
+#social-links:hover{
+    cursor: pointer;
 }
 .social-icon{
     height: 50px;
@@ -1038,7 +1121,7 @@ ul > li > a{
 
 @media screen and (max-width: 576px) {
     nav{
-        position: static;
+        position: fixed;
     }
     #nav1{
         display: none;
@@ -1049,6 +1132,44 @@ ul > li > a{
     #serch-sec{
         display: none;
     }
+    #computer-display{
+        display: none;
+    }
+    #phone-display{
+        display: block;
+        overflow: hidden;
+    }
+    .checkbtn{
+        display: block;
+        /* position: fixed; */
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(11, 23, 40);
+        opacity: .9;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 30;
+      }
+      #phone-display ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      #phone-display ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
 
     /* header */
     #dream-div{
@@ -1252,6 +1373,42 @@ ul > li > a{
     #serch-sec{
         display: none;
     }
+    #computer-display{
+        display: none;
+    }
+    #phone-display{
+        display: block;
+    }
+    .checkbtn{
+        display: block;
+        /* position: fixed; */
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 30;
+      }
+      #phone-display ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      #phone-display ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
 
     /* header */
     #dream-div{
@@ -1436,5 +1593,13 @@ ul > li > a{
     #condition{
         justify-content: center;
         margin-top: 15px;
+    }
+}
+
+@media  screen and (min-width: 1230px) {
+    #choose-us-sec{
+        padding-bottom: 100px;
+        overflow: hidden;
+        margin: auto;
     }
 }
