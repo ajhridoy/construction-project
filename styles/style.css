@@ -59,7 +59,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -113,10 +113,10 @@ ul > li > a{
 #serch-sec::before{
     content: "";
     position: absolute;
-    width: 220px;
+    width: 235px;
     height: 152%;
     background-color: var(--primary-color);
-    right: -34px;
+    right: -47px;
     z-index: -1;
 }
 #number{
